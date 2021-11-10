@@ -8,11 +8,12 @@ public class Asignatura {
     int codigoExterno;
 
     Asignatura() {
-        this("Sin nombre");
+        //this("Sin nombre");
         this(0);
+        this.nombre = "Sin nombre";
     }
 
-    Asignatura(int codigoInterno) {
+    Asignatura(int codigoInterno,int codigoExterno) {
         this("Sin nombre", codigoInterno, 0);
     }
 
@@ -36,11 +37,11 @@ public class Asignatura {
         this.nombre = nombre;
     }
 
-    void cambiarDatos(int codigoInterno) {
+    void cambiarDatosInt(int codigoInterno) {
         this.codigoInterno = codigoInterno;
     }
 
-    void cambiarDatos(int codigoExterno) {
+    void cambiarDatosExt(int codigoExterno) {
         this.codigoExterno = codigoExterno;
     }
 
